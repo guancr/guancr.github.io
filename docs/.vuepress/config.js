@@ -58,6 +58,7 @@ module.exports = {
           {
             text: '知识点笔记',
             items: [
+              { text: 'Js', link: '/zh/js/' },
               { text: 'Vue', link: '/zh/vue/' },
               { text: 'React', link: '/zh/react/'},
               { text: '小程序', link: '/zh/miniapp/' },
@@ -93,6 +94,8 @@ module.exports = {
         sidebar: {
           '/guide/': genSidebarConfig('指南'),
           '/zh/ali/': [{title:'阿里面试题'}],
+          '/zh/js/': [{title: 'JS知识点', children: [
+            '', 'js基本原理', '数值', '字符串']}],
           '/zh/vue/': [{title: 'Vue知识点', children: [
             '', 'Es6', 'Es6方法扩展', 'Webpack', 'Babel', 'Promise', 'Vue 各种方法之间的区别', 'Vue组件', 'Vue路由', 'Vue动画', 'vue钩子函数', 'vuex'
           ]}],
